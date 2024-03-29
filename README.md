@@ -28,8 +28,8 @@
 
 ## 4. 拷贝远程主机目录或文件到本机
 
-    # 拷贝远程主机文件到本机
-    ./pssh.sh hss 192.168.133.152 off /root/1.txt /root
+    # 拷贝远程主机文件到本机，本机会创建一个以远程主机ip命名的目录
+    ./pssh.sh hss 192.168.133.152 off /root /root/1.txt
 
     # 拷贝远程主机目录到本机，目录后加/会拷贝目录下文件，不加/会拷贝目录
-    ./pssh.sh hss 192.168.133.152 off /root/testdir /root
+    ./pssh.sh hss 192.168.133.152 off /root /root/testdir
